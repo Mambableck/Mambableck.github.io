@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f7f7f7;
+    background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -80,7 +80,7 @@ body {
 
 #content #box_text {
     width: 671px;
-    background-color: #ffffff;
+    background-color: #cccccc;
     float: right;
     padding: 49px 48px 51px 76px;
 }
