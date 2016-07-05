@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script type="text/javascript">
+
+		function AskQuestion()
+		{
+			var a=document.getElementById("contribution").value;
+
+			var b=document.getElementById("percent").value;
+			
+			var c=document.getElementById("period").value;
+			
+			var year=1;
+
+			while(year <=c){
+			vklad=(a/100*b+a);
+			alert("Сумма в "+year+"-й год "+vklad.toFixed(2)+"<br>");
+			year++
+			}
+		}
+
+		function RU() 
+		{
+			
+		}
+
+	</script>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="puzzle.html">Загадки</a><span>/</span>
+		<a href="guess-2.html">Угадайка мультиплеер</a><span>/</span>
+		<a href="russian roulette.html">Русская рулетка</a><span>/</span>
+		<a href="Банковская программа.html">Калькулятор вкладов</a>
+	</div>
+<div id="content">
+	<h1>Личный сайт студента GeekBrains</h1>
+    <div id="center">	
+		<h3>Банковская программа</h3>
+		<table border="0">	
+		<h5>Введите параметры вклада</h5>		
+	    	<tr>
+		    	<td>
+		    		<div id="box">
+				    	<p>Сумма вклада(Руб./USD/EUR)</p>
+				    	<input type="text" id="contribution">
+			            <p>Процент по вкладу(%)</p>
+			            <input type="text" id="percent">
+			            <p>Срок вклада(в годах)</p>
+				    	<input type="text" id="period">
+			            <br><br/>
+			            <a href="#" onclick="AskQuestion();">Отправить</a>
+			        </div>
+	            </td>
+				
+				<td>
+			    	<div id="box" align="center">
+			    		<p>Введите сумму в Рублях</p>
+			    		<input type="text" id="">
+			    		<a href="#" onclick="RU();">Готово</a>
+			    		<p>Введите сумму в Рублях</p>
+			    		<input type="text" id="">
+			    		<a href="#" onclick="RU();">Готово</a>
+			    		<p>Введите сумму в Рублях</p>
+			    		<input type="text" id="">
+			    		<a href="#" onclick="RU();">Готово</a>
+			    	</div>
+		    	</td>
+	        </tr>
+	    	</div>
+	    </table>
+	</div>
+</div>
+
+<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains </a>
+</div>
+
+</body>
+</html>
