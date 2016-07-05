@@ -28,12 +28,36 @@
 		{
 			var m=document.getElementById("rub").value;
 			
-			var l = m * 0.015643 
+			var l = m * 0.01552
 	
 			var v = m * 0.01
 				
-			alert(l.toFixed(2) + " USD");
-			alert(v.toFixed(2) + " EUR");
+			alert(l.toFixed(2) + " дол.");
+			alert(v.toFixed(2) + " евро");
+		}
+		
+		function USD() 
+		{
+			var m=document.getElementById("dol").value;
+			
+			var l = m * 64.27
+	
+			var v = m * 0.90
+				
+			alert(l.toFixed(2) + " руб.");
+			alert(v.toFixed(2) + " евро");
+		}
+		
+		function EUR() 
+		{
+			var m=document.getElementById("evr").value;
+			
+			var l = m * 71.63
+	
+			var v = m * 1.11
+				
+			alert(l.toFixed(2) + " руб.");
+			alert(v.toFixed(2) + " дол.");
 		}
 
 	</script>
