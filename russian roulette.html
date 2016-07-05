@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Личный сайт студента GeekBrains</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		
+		function Play()
+		{
+			var number=0;
+			alert("Игра в русскую рулетку.Поехали!")
+			do{
+				if ((Math.random()*6)<1) {
+					alert("Вам выпала роковая пуля...");
+					break;
+				}
+				number++;
+			}while(prompt("Вы прошли "+number+"-й раунд.Для продолжения нажмите 'Enter',для выхода нажмите 'Отмена'")=="");
+			alert("Раундов пройдено:"+number);
+		}
+	</script>
+</head>
+<body>
+	<div id="header">
+		<a href="index.html">Главная</a><span>/</span>
+		<a href="puzzle.html">Загадки</a><span>/</span>
+		<a href="guess-2.html">Угадайка мультиплеер</a><span>/</span>
+		<a href="russian roulette.html">Русская рулетка</a>
+	</div>
+<div id="content">
+	<h1>Личный сайт студента GeekBrains</h1>
+    <div id="center">	
+		<h3>Русская рулетка</h3>			
+	    <div id="box">
+	    	<p>Игра для одного игрока</p>
+            <br><br/>
+            <a href="#" onclick="Play();">Начать игру</a>
+	    </div>
+</div>
+
+<div id="footer">
+	Copyright © 2016 <a href="https://geekbrains.ru/"> GeekBrains </a>
+</div>
+
+</body>
+</html>
