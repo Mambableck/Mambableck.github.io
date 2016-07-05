@@ -9,16 +9,16 @@
 
 		function AskQuestion()
 		{
-			var a=document.getElementById("contribution").value;
+			var vklad=document.getElementById("contribution").value;
 
-			var b=document.getElementById("percent").value;
+			var procent=document.getElementById("percent").value;
 			
-			var c=document.getElementById("period").value;
+			var god=document.getElementById("period").value;
 			
 			var year=1;
 
-			while(year <=c){
-			vklad=(a/100*b+a);
+			while(year <=god){
+			vklad=(vklad/100*procent+vklad);
 			year++
 			}
 			alert("Сумма в "+year+"-й год "+vklad.toFixed(2)+"<br>");
