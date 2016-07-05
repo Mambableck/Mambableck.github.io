@@ -26,7 +26,14 @@
 
 		function RU() 
 		{
+			var m=document.getElementById("rub").value;
 			
+			var l = m * 0.015643 
+	
+			var v = m * 0.01
+				
+			alert(l.toFixed(2) + " USD");
+			alert(v.toFixed(2) + " EUR");
 		}
 
 	</script>
@@ -62,14 +69,14 @@
 				<td>
 			    	<div id="box" align="center">
 			    		<p>Введите сумму в Рублях</p>
-			    		<input type="text" id="">
+			    		<input type="text" id="rub">
 			    		<a href="#" onclick="RU();">Готово</a>
-			    		<p>Введите сумму в Рублях</p>
-			    		<input type="text" id="">
-			    		<a href="#" onclick="RU();">Готово</a>
-			    		<p>Введите сумму в Рублях</p>
-			    		<input type="text" id="">
-			    		<a href="#" onclick="RU();">Готово</a>
+			    		<p>Введите сумму в Долларах</p>
+			    		<input type="text" id="dol">
+			    		<a href="#" onclick="USD();">Готово</a>
+			    		<p>Введите сумму в Евро</p>
+			    		<input type="text" id="evr">
+			    		<a href="#" onclick="EUR();">Готово</a>
 			    	</div>
 		    	</td>
 	        </tr>
