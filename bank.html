@@ -9,19 +9,16 @@
 
 		function AskQuestion()
 		{
-			var vklad=document.getElementById("contribution").value;
+			var a=parseInt(document.getElementById("contribution").value);
 
-			var procent=document.getElementById("percent").value;
+			var b=parseInt(document.getElementById("percent").value);
 			
-			var god=document.getElementById("period").value;
-			
-			var year=1;
+			var c=parseInt(document.getElementById("period").value);
 
-			while(year <=god){
-			vklad=(vklad/100*procent+vklad);
-			year++
+			for(year=1,year<=c,year++){
+				a=a+a*b/100;
+				alert("Сумма в клада на "+year+"-й год равна:"+Math.floor(a));
 			}
-			alert("Сумма в "+year+"-й год "+vklad.toFixed(2)+"<br>");
 		}
 
 		function RU() 
